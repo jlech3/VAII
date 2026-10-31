@@ -124,3 +124,14 @@ Do povinných entít sa rátajú Región, Choreografia, Materiál a Udalosť. Po
 6. štýly písané v SASS,
 7. tlačová verzia programu vystúpenia,
 8. viac súborov v jednej inštalácii (multi-tenant).
+
+## Spustenie aplikácie
+
+Aplikácia beží v Dockeri. V koreňovom priečinku repozitára spusti:
+
+```bash
+cd docker
+docker compose up -d
+```
+
+Aplikácia je potom dostupná na [http://localhost/](http://localhost/).
