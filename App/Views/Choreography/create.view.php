@@ -1,10 +1,5 @@
 <?php
-
-
 /** @var \Framework\Support\LinkGenerator $link */
-/** @var \Framework\Support\View $view */
-
-$view->setLayout('portal');
 ?>
 
 <div class="page">

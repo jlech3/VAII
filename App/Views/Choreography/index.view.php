@@ -1,9 +1,6 @@
 <?php
 /** @var \App\Models\Choreography[] $choreographies */
-/** @var \Framework\Support\View $view */
 /** @var \Framework\Support\LinkGenerator $link */
-
-$view->setLayout('portal');
 ?>
 
 <div class="page">

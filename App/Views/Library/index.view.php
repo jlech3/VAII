@@ -1,9 +1,4 @@
-<?php
 
-/** @var \Framework\Support\View $view */
-
-$view->setLayout('portal');
-?>
 
 <div class="page">
     <h1>Knižnica</h1>
