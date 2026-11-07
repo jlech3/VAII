@@ -327,6 +327,45 @@ h1 {
     text-decoration: none;
 }
 
+/* Správa choreografií – tabuľka so zoznamom a formuláre na pridanie a úpravu */
+
+.data-table {
+    width: 100%;
+    margin-top: 1.5rem;
+    border-collapse: collapse;
+    background-color: var(--color-surface);
+}
+
+.data-table th,
+.data-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--color-border);
+    text-align: left;
+}
+
+/* formulár na mazanie je v bunke, nemá pridávať medzery */
+.data-table form {
+    margin: 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 32rem;
+}
+
+.form input,
+.form textarea {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    font: inherit;
+}
+.form button {
+    align-self: flex-start;
+}
+
 @media (max-width: 768px) {
 
     .cards {

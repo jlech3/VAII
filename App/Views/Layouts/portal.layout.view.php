@@ -30,10 +30,18 @@
     <span class="badge">Portál člena</span>
 
     <nav aria-label="Hlavná navigácia">
+        <?php
+        // adresa aktuálneho kontroléra, podľa nej zvýrazníme položku v menu
+        $current = $link->url('index');
+        ?>
         <ul>
             <li><a href="#">Nástenka</a></li>
             <li><a href="#">Kalendár</a></li>
-            <li><a href="<?= $link->url('library.index') ?>" aria-current="page">Knižnica</a></li>
+            <li><a href="<?= $link->url('library.index') ?>"
+                        <?= $current === $link->url('library.index') ? 'aria-current="page"' : '' ?>>Knižnica</a></li>
+            <!-- neskôr iba pre vedúcich, po pridaní prihlasovania a rolí -->
+            <li><a href="<?= $link->url('choreography.index') ?>"
+                        <?= $current === $link->url('choreography.index') ? 'aria-current="page"' : '' ?>>Správa choreografií</a></li>
         </ul>
     </nav>
 
